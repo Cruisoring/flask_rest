@@ -1,0 +1,77 @@
+### test Colors API
+GET {{mocker}}/colors
+
+
+### test colors API
+GET {{mocker}}/colors
+
+
+### test colors by giftCardId
+GET {{mocker}}/colors/4460978
+
+
+### test Colors API
+GET {{mocker}}/colors?color=red
+
+
+### test Colors API
+GET {{mocker}}/colors?type=primary&code.rgba[0]=255
+
+
+### test GET color by name
+GET {{mocker}}/colors/2
+
+
+### test POST new color
+POST {{mocker}}/colors/purple
+Content-Type: application/json
+
+{
+"category": "value",
+"code": {
+    "hex": "#808",
+    "rgba": [
+    128,
+    0,
+    128,
+    1
+    ]
+},
+"color": "purple"
+}
+
+### test DELETE
+DELETE {{mocker}}/colors/white
+
+
+### test GET color by name
+GET {{mocker}}/colors/WHITE
+
+
+### test PUT
+PUT {{mocker}}/colors/WHITE
+Content-Type: application/json
+
+{
+    "category": "value",
+    "code": {
+        "hex": "#FFFFFF",
+        "rgba": [
+        0,
+        0,
+        0,
+        1
+        ]
+    },
+    "color": "white"
+}
+
+### test PATCH
+PATCH {{mocker}}/colors/White
+Content-Type: application/json
+
+{
+    "code": {
+        "hex": "#FFF"
+    }
+}

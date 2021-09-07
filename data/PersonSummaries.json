@@ -1,0 +1,198 @@
+[
+	{
+		"id": "0002418453",
+		"cprsId": "CT11464991",
+		"source": "NSWPOL",
+		"localRefId": "15387682",
+		"nafisCNIId": "015387682",
+		"nameType": "NICKNAME",
+		"surname": "JOHN",
+		"givenName1": "JOHN",
+		"givenName2": null,
+		"givenName3": null,
+		"dateOfBirth": "1975-06-22",
+		"gender": "MALE",
+		"address": {
+			"@version": "1.0",
+			"id": "0073323801",
+			"source": "NSWPOL",
+			"addressDate": "2003-08-17",
+			"locationType": "CONTACT",
+			"streetNumberFrom": "29",
+			"streetName": "ACROPOLIS",
+			"streetTypeCode": "ST",
+			"town": "ROOTY HILL",
+			"stateCode": "NSW",
+			"postcode": "2766",
+			"jurisdictionRef1": "EVENT",
+			"jurisdictionRef2": "18303168"
+		},
+		"hasPhoto": false,
+		"isUnknown": false,
+		"involvements": [
+			{
+				"code": "OFFENCE_HISTORY",
+				"status": "ACTIVE"
+			}
+		]
+	},
+	{
+		"id": "940057139A",
+		"cprsId": "CT71247704",
+		"source": "VICPOL",
+		"localRefId": "959831980",
+		"nameType": "ALIAS",
+		"surname": "JOHN",
+		"givenName1": "JOHN",
+		"givenName2": "DAVID",
+		"givenName3": null,
+		"dateOfBirth": "1966-07-07",
+		"gender": "FEMALE",
+		"hasPhoto": false,
+		"isUnknown": false,
+		"involvements": [
+			{
+				"code": "WANTED",
+				"status": "ACTIVE"
+			}
+		]
+	},
+	{
+		"id": "NTALIAS8396",
+		"cprsId": "CT102818665",
+		"source": "NTPOL",
+		"localRefId": "11792",
+		"nafisCNIId": "050001573",
+		"nameType": "ALIAS",
+		"surname": "SOPHIA",
+		"givenName1": "JOHN",
+		"givenName2": null,
+		"givenName3": null,
+		"gender": "FEMALE",
+		"address": {
+			"@version": "1.0",
+			"id": "NTEOILOC30419",
+			"source": "NTPOL",
+			"addressDate": "1988-10-21",
+			"addressDateString": "1988-10-21",
+			"locationDescription": "BAGOT COMMUNITY",
+			"locationType": "RESIDENTIAL",
+			"flatNumber": "14",
+			"streetNumberFrom": "133",
+			"streetName": "BAGOT",
+			"streetTypeCode": "RD",
+			"town": "LUDMILLA",
+			"stateCode": "NT",
+			"postcode": "0820",
+			"unstructuredAddress": "BAGOT COMMUNITY"
+		},
+		"hasPhoto": false,
+		"isUnknown": false,
+		"involvements": [
+			{
+				"code": "OFFENCE_HISTORY",
+				"status": "INDETERMINATE"
+			}
+		]
+	},
+	{
+		"id": "TASPOLPNM23527",
+		"cprsId": "CT60142271",
+		"source": "TASPOL",
+		"localRefId": "393688",
+		"nameType": "PREFERRED NAME",
+		"surname": "JOHN",
+		"givenName1": "CLARK",
+		"givenName2": null,
+		"givenName3": null,
+		"dateOfBirth": "1922-09-04",
+		"gender": "MALE",
+		"hasPhoto": false,
+		"isUnknown": false,
+		"involvements": [
+			{
+				"code": "FIREARMS",
+				"status": "INDETERMINATE"
+			}
+		]
+	},
+	{
+		"id": "40038776A",
+		"cprsId": "CT101143927",
+		"source": "VICPOL",
+		"localRefId": "907227600",
+		"nameType": "ALIAS",
+		"surname": "JOHN",
+		"givenName1": "ADAM",
+		"givenName2": null,
+		"givenName3": null,
+		"dateOfBirth": "1960-06-02",
+		"gender": "MALE",
+		"address": {
+			"@version": "1.0",
+			"id": "40129119",
+			"source": "VICPOL",
+			"addressDate": "2004-04-26",
+			"locationType": "CONTACT",
+			"flatNumber": "9",
+			"streetNumberFrom": "6",
+			"streetName": "CLOSE",
+			"streetTypeCode": "AV",
+			"town": "DANDENONG",
+			"stateCode": "VIC",
+			"postcode": "3175"
+		},
+		"hasPhoto": false,
+		"isUnknown": false,
+		"involvements": [
+			{
+				"code": "WARNING",
+				"status": "ACTIVE"
+			},
+			{
+				"code": "OFFENCE_HISTORY",
+				"status": "ACTIVE"
+			}
+		]
+	},
+	{
+		"id": "0011899954",
+		"cprsId": "CT12542605",
+		"source": "NSWPOL",
+		"localRefId": "691942899",
+		"nameType": "ALIAS",
+		"surname": "JOHN",
+		"givenName1": "JOHN",
+		"givenName2": null,
+		"givenName3": null,
+		"dateOfBirth": "1952-01-04",
+		"gender": "MALE",
+		"address": {
+			"@version": "1.0",
+			"id": "0018288850",
+			"source": "NSWPOL",
+			"addressDate": "1998-12-19",
+			"locationType": "CONTACT",
+			"flatNumber": "2",
+			"streetNumberFrom": "22",
+			"streetName": "CANBERRA",
+			"streetTypeCode": "AV",
+			"town": "DANDENONG",
+			"stateCode": "VIC",
+			"jurisdictionRef1": "INTEL REPORT",
+			"jurisdictionRef2": "7548482"
+		},
+		"hasPhoto": false,
+		"isUnknown": false,
+		"involvements": [
+			{
+				"code": "WARNING",
+				"status": "INACTIVE"
+			},
+			{
+				"code": "FIREARMS",
+				"status": "INDETERMINATE"
+			}
+		]
+	}
+]

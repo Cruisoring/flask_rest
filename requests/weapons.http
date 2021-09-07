@@ -1,0 +1,77 @@
+### test weapons API
+GET {{mocker}}/weapons
+
+
+### test weapons API
+GET {{mocker}}/weapons
+
+
+### test weapons by nid
+GET {{mocker}}/weapons/961149
+
+
+### test weapons API
+GET {{mocker}}/weapons?MAG_CAP=4&MANUFACTURE_DETAILS_MAKE=BSA
+
+
+### test weapons API
+GET {{mocker}}/weapons?type=primary&code.rgba[0]=255
+
+
+### test GET color by name
+GET {{mocker}}/weapons/2
+
+
+### test POST new color
+POST {{mocker}}/weapons/purple
+Content-Type: application/json
+
+{
+"category": "value",
+"code": {
+    "hex": "#808",
+    "rgba": [
+    128,
+    0,
+    128,
+    1
+    ]
+},
+"color": "purple"
+}
+
+### test DELETE
+DELETE {{mocker}}/weapons/white
+
+
+### test GET color by name
+GET {{mocker}}/weapons/WHITE
+
+
+### test PUT
+PUT {{mocker}}/weapons/WHITE
+Content-Type: application/json
+
+{
+    "category": "value",
+    "code": {
+        "hex": "#FFFFFF",
+        "rgba": [
+        0,
+        0,
+        0,
+        1
+        ]
+    },
+    "color": "white"
+}
+
+### test PATCH
+PATCH {{mocker}}/weapons/White
+Content-Type: application/json
+
+{
+    "code": {
+        "hex": "#FFF"
+    }
+}

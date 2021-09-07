@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+{% set active_page = 'routes' %}
+
+{% block title %}All Routes Supported by this Service{% endblock %}
+{% block body %}
+<br>
+<h2>All Routes</h2>
+<hr>
+<div class="row" style="background-color: lightgrey;">
+  <table class="table table-striped">
+    <thead>
+      <tr class="headers">
+        <th scope="col">#</th>
+        <th scope="col">Route Path</th>
+        <th scope="col">Methods</th>
+        <th scope="col">Endpoint</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for i in range(0, rules|length) %}
+      <tr>
+        <th scope="row">{{ i }}</th>
+        <td class="table-primary">{{ rules[i][0] }}</td>
+        <td>{{ rules[i][1] }}</td>
+        <td>{{ rules[i][2] }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<div class="row" style="background-color: lightskyblue;">
+  <table class="table table-striped">
+    <thead>
+      <tr class="headers">
+        <th scope="col">Route</th>
+        <th scope="col">Source</th>
+        <th scope="col">KeyName</th>
+        <th scope="col">Count</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for route, mock in mocks.items() %}
+      <tr>
+        <th>&sol;api&sol;{{ route }}</th>
+        <td>{{ mock.source }}</td>
+        <td>-</td>
+        <td>{{ mock.records|length }}</td>
+      </tr>
+      <tr>
+        <td>&sol;api&sol;{{ route }}&sol;&lt;key&gt;</td>
+        <td>{{ mock.source }}</td>
+        <td>{{ mock.keyname }}</td>
+        <td>{{ mock.records|length }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

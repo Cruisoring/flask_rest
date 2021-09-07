@@ -1,0 +1,72 @@
+
+
+### test Compare
+POST {{mocker}}/compare
+
+{
+    "left": { "k2": null, "key1": 123, "extra": [1, 2] },
+    "right": { "KEY1": "123", "Extra": [1, "2"], "K2": "OK" }
+}
+
+###
+GET {{mocker}}/routes
+
+
+### Invalid operation
+DELETE {{mocker}}/vouchers
+
+### test Add new Routes with data
+POST {{mocker}}/admin/routes/new
+Content-Type: application/json
+
+{
+    "fileName": "vouchers.csv",
+    "content": "voucherNo,issueDate,amount,docketNo,givenName,surName,location,redeemedDate\n1022000043,17/12/2008,40,486957,SHA,ANTHONISZ,1022,2/02/2009\n1038000052,18/12/2008,40,62377,DARREN,BALL,1038,2/02/2009",
+    "keyName": "voucherNo"
+}
+
+### test DELETE
+DELETE {{mocker}}/vouchers/1022000048
+
+
+### test GET existing item
+GET {{mocker}}/vouchers/1022000043
+
+
+### test GET non-existing item
+GET {{mocker}}/vouchers/1022000048
+
+
+### test POST
+POST {{mocker}}/vouchers/1022000048
+Content-Type: application/json
+
+{
+  "amount": "98.89",
+  "docketNo": "486988",
+  "givenName": "SHA",
+  "issueDate": "17/12/2018",
+  "location": "1022",
+  "redeemedDate": "2/02/2019",
+  "surName": "ANTHONISZ",
+  "voucherNo": "1022000048"
+}
+
+### test PATCH
+PATCH {{mocker}}/vouchers/1022000048
+Content-Type: application/json
+
+{
+    "amount": 77.63
+}
+
+
+###
+# GET https://adfs.consumption.net/adfs/oauth2/authorize?response_type=code&client_id=db1bd9db-a3f5-4615-a0a2-31049975115f&resource=urn%3Arelying%3Aparty%3Atrust%3Aidentifier&redirect_uri=http%3A%2F%2Flocalhost%3A5000%2FgetAToken
+GET https://accounts.google.com/o/oauth2/v2/auth?client_id=139281538940-arh29cscgqk2vic01ackiphugqe6m2lr.apps.googleusercontent.com&response_type=code&scope=openid%20email&redirect_uri=http%3A%2F%2F256stuff.com%2Fgray%2Fdocs%2Foauth2.0%2FcomeBack.cgi&state=this-should-be-some-generated-secret-token
+
+###
+GET {{mocker}}/token
+
+###
+Get http://10.26.156.87:8000/getToken

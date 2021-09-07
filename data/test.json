@@ -1,0 +1,5 @@
+{
+    "fileName": "vouchers.csv",
+    "content": "voucherNo,issueDate,amount,docketNo,givenName,surName,location,redeemedDate\n1022000043,17/12/2008,40,486957,SHA,ANTHONISZ,1022,2/02/2009\n1038000052,18/12/2008,40,62377,DARREN,BALL,1038,2/02/2009",
+    "keyName": "voucherNo"
+}

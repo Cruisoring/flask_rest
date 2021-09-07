@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% set active_page = 'create' %}
+
+{% block title %}Add Mock Data to Create new API{% endblock %}
+{% block body %}
+<br>
+<h2>Create New API from Data File</h2>
+<hr>
+<form class="form-horizontal" method="POST"  enctype="multipart/form-data" action="{{ url_for('create') }}">
+  {{ form.hidden_tag() }}
+  <div class="form-group m-5">
+    {{ form.data_file.label }}
+    {{ form.data_file(class="form-control-file", accept=".csv,.json", placeholder="Choose the data file of either .json or .csv") }}
+  </div>
+  <div class="form-group m-5">
+    {{ form.route.label }}
+    <b>&sol;api&sol;  +</b> {{ form.route(class="form-control", placeholder="Enter the new API route that would be appened after '/api/'") }}
+  </div>
+  <div class="form-group m-5">
+    {{ form.key.label }}
+    {{ form.key(class="form-control", placeholder="Enter the Name of the Key") }}
+  </div>  
+  {{ form.submit(class="btn btn-primary form-control") }}
+</form>
+{% endblock %}

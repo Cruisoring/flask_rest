@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% set active_page = 'compare' %}
+
+{% block title %}Compare JSON objects{% endblock %}
+{% block body %}
+<br>
+<h2>Paste two JSON objects to compare</h2>
+<hr>
+<form class="row g-3", method="POST", action="{{ url_for('compare') }}">
+  {{ form.hidden_tag() }}
+  <div class="form-group col-6 col-sm-6">
+    <!-- <label>Left Object:</label>
+    <textarea class="form-control" type="text" ></textarea> -->
+    {{ form.left.label }}
+    {{ form.left(class="form-control", rows="10") }}
+  </div>
+  <div class="form-group col-6 col-sm-6">
+    <!-- <label>Right Object:</label>
+    <textarea class="form-control" type="text" name="right" rows="10"></textarea> -->
+    {{ form.right.label }}
+    {{ form.right(class="form-control", rows="10") }}
+  </div>
+  <!-- <input class="btn btn-primary form-control" type="submit" value="Submit"> -->
+  {{ form.submit(class="btn btn-primary form-control") }}
+</form>
+{% endblock %}
+
